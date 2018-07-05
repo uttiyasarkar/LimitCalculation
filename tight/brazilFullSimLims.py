@@ -182,8 +182,8 @@ if __name__ == '__main__':
 	#g_obs.Draw('lsames');
 	g_exp.Draw('lsames');
 	for i in range(0,100):
-		print "Mass %d  Exp Excl %g " %(1750+i,g_exp.Eval(1750+i))
-		print "Theory Xsec %g " %g_xsec.Eval(1750+i)
+		print "Mass %d  Exp Excl %g " %(2000+i,g_exp.Eval(2000+i))
+		print "Theory Xsec %g " %g_xsec.Eval(2000+i)
 	#oneLine.Draw("LSAMES");
 	txta.Draw();
 	txtb.Draw();
