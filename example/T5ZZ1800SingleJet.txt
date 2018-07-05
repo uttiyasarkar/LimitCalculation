@@ -1,0 +1,14 @@
+# Simple counting experiment, with one signal and a few background processes
+# Simplified version of the 35/pb H->WW analysis for mH = 160 GeV
+imax 5  number of channels
+jmax 1  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+bin bin0 bin1 bin2 bin3 bin4 
+observation  61.20 13.22 2.36 0.64 0.18
+bin  bin0 bin0  bin1 bin1  bin2 bin2  bin3 bin3  bin4 bin4 
+process  sig bkg  sig bkg  sig bkg  sig bkg  sig bkg 
+process  0 1  0 1  0 1  0 1  0 1 
+rate 0.71 61.20 0.91 13.22 1.03 2.36 1.00 0.64 2.56 0.18 
+------------
+BkgMetUnc lnN  -  1.01  -  1.01  -  1.02  -  1.50  -  1.88 
+BkgShapeUnc lnN  -  1.20  -  1.20  -  1.20  -  1.20  -  1.20 
