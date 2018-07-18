@@ -15,8 +15,8 @@ observation
 bin             bin1 bin1  bin2  bin2 bin3 bin3  
 process         sig  bkg  sig  bkg  sig  bkg  sig  bkg  sig  bkg  sig  bkg
 process          0     1    0   1     0   1    0    1    0    1    0    1
-rate           sig1  20.49  sig2  8.48  sig3  4.14  sig4  1.276  sig5  0.3933  sig6  0.145
+rate           sig1  21.27  sig2  8.32  sig3  3.82  sig4  1.09  sig5  0.31  sig6  0.11
 
 ------------
-MassShapeUnc lnN - 1.09 - 1.1 - 1.1 - 1.1 - 1.1 - 1.1
-METShapeUnc lnN - 3.91 - 4.60 - 5.52 - 6.81 - 8.52 - 9.90
+MassShapeUnc lnN - 1.02 - 1.02 - 1.02 - 1.02 - 1.02 - 1.02
+METShapeUnc lnN - 1.04 - 1.11 - 1.21 - 1.45 - 1.62 - 2.00
