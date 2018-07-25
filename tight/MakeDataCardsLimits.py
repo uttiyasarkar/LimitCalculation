@@ -35,15 +35,15 @@ Total.Write("InputBkg");
 
 
 
-METBin=[300, 450, 600, 800, 1000,1200,2000]
+METBin=[300, 500, 800,1200,2000]
 mGo=[750,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100]
 SearchBins=TH1D("SearchBins", "", len(METBin)-1, array('d',METBin));
 BkgBins=[]
 BkgUnc=[]
 #HERE YOU Should add the uncertainty on the mass shape from the 1sigma bands in the mass window [75,95]
-BkgUncMass=[1.02,1.02, 1.02,1.02,1.02, 1.02]
+BkgUncMass=[1.06,1.06, 1.06,1.06]
 #HERE YOU should add the uncertainty in the MET bins from the single lepton region fractions
-BkgUncMET=[1.12,1.16,1.64,2.50,3.61,6.50]
+BkgUncMET=[1.05,1.1,1.39,1.55]
 ##Bkg Bins
 for i in range(0,len(METBin)-1):
 	lowbin=Total.GetXaxis().FindBin(METBin[i])	

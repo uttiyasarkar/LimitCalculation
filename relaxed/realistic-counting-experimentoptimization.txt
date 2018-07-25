@@ -1,21 +1,21 @@
 # Simple counting experiment, with one signal and a few background processes 
 # Simplified version of the 35/pb H->WW analysis for mH = 160 GeV
-imax 6  number of channels
+imax 4  number of channels
 jmax 1  number of backgrounds
 kmax *  number of nuisance parameters (sources of systematical uncertainties)
 ------------
 # we have just one channel, in which we observe 0 events
-bin bin1 bin2 bin3 bin4 bin5 bin6
-observation 
+bin bin1 bin2 bin3 bin4
+observation 265.26 67.09 7.34 0.33
 ------------
 # now we list the expected events for signal and all backgrounds in that bin
 # the second 'process' line must have a positive number for backgrounds, and 0 for signal
 # then we list the independent sources of uncertainties, and give their effect (syst. error)
 # on each process and bin
-bin             bin1 bin1  bin2  bin2 bin3 bin3  
-process         sig  bkg  sig  bkg  sig  bkg  sig  bkg  sig  bkg  sig  bkg
-process          0     1    0   1     0   1    0    1    0    1    0    1
-rate           sig1 100.08  sig2  32.06 sig3  11.80  sig4  2.59  sig5  0.57  sig6  0.14
+bin             bin1 bin1 bin2 bin2 bin3 bin3 bin4 bin4
+process         sig  bkg  sig  bkg  sig  bkg  sig  bkg  
+process          0     1    0   1     0   1    0    1   
+rate           sig1 265.26  sig2  67.09 sig3  7.34  sig4  0.33 
 ------------
-MassShapeUnc lnN - 1.02 - 1.02 - 1.02 - 1.02 - 1.02 - 1.02
-METShapeUnc lnN - 1.02 - 1.06 - 1.09 - 1.18 - 1.25 - 1.42
+MassShapeUnc lnN - 1.03 - 1.03 - 1.03 - 1.03 
+METShapeUnc lnN - 1.01 - 1.05 - 1.24 - 1.56 

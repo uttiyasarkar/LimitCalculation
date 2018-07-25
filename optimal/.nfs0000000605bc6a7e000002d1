@@ -6,16 +6,17 @@ kmax *  number of nuisance parameters (sources of systematical uncertainties)
 ------------
 # we have just one channel, in which we observe 0 events
 bin bin1 bin2 bin3 bin4
-observation 18.73 6.62 1.16 0.094 
+observation 
 ------------
 # now we list the expected events for signal and all backgrounds in that bin
 # the second 'process' line must have a positive number for backgrounds, and 0 for signal
 # then we list the independent sources of uncertainties, and give their effect (syst. error)
 # on each process and bin
-bin             bin1 bin1 bin2 bin2 bin3 bin3 bin4 bin4  
+bin             bin1 bin1  bin2  bin2   
 process         sig  bkg  sig  bkg  sig  bkg  sig  bkg  
 process          0     1    0   1     0   1    0    1   
-rate           sig1 18.73 sig2  6.62 sig3  1.16  sig4  0.094
+rate           sig1  53.47  sig2  18.32  sig3  3.07  sig4  0.24  
+
 ------------
-MassShapeUnc lnN - 1.06 - 1.06 - 1.06 - 1.06
-METShapeUnc lnN - 1.05 - 1.10 - 1.39 - 1.55 
+MassShapeUnc lnN - 1.06 - 1.06 - 1.06 - 1.06 
+METShapeUnc lnN - 1.01 - 1.03 - 1.20 - 1.26 
